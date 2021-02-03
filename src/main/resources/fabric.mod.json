@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "skylib",
+  "version": "${version}",
+  "name": "SkyLib",
+  "description": "A library for common stuff used in in the skyvillage server.",
+  "authors": [
+    "Bendi"
+  ],
+  "contact": {
+    "website": "https://skyvillage.gq",
+    "repo": "https://github.com/SkyVillageMC/skylib-fabric.git"
+  },
+  "license": "MIT",
+  "icon": "assets/skylib/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "hu.bendi.skylib.client.SkylibClient"
+    ],
+    "main": [
+      "hu.bendi.skylib.Skylib"
+    ]
+  },
+  "mixins": [
+    "skylib.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.1",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
